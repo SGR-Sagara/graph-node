@@ -62,8 +62,7 @@ sudo cp /home/ubuntu/efs-share/ipfsc-lib/ipfs-cluster-ctl/ipfs-cluster-ctl /home
 sudo chmod 755 /bin/ipfs*
 
 ## Add ipfs cluster service file and set permission
-sudo cp /home/ubuntu/efs-share/services/ipfsc.service  /usr/lib/systemd/system/ipfsc.service
-#sudo cp /home/ubuntu/efs-share/services/ipfsc-node.service  /usr/lib/systemd/system/ipfsc.service
+sudo cp /home/ubuntu/efs-share/services/ipfsc-node.service  /usr/lib/systemd/system/ipfsc.service
 sudo chmod 755 /usr/lib/systemd/system/ipfsc.service
 sudo systemctl daemon-reload
 
