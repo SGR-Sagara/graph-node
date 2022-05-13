@@ -1,0 +1,12 @@
+[Unit]
+Description=Join to the IPFS Swarm
+After=ipfsc.service
+
+[Service]
+ExecStart=/home/ubuntu/efs-share/services/add_to_swarm.sh
+Restart=always
+User=ubuntu
+Group=ubuntu
+
+[Install]
+WantedBy=multi-user.target

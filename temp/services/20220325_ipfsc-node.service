@@ -1,0 +1,11 @@
+[Unit]
+Description=ipfs cluster daemon
+
+[Service]
+ExecStart=/bin/ipfs-cluster-service daemon --bootstrap /ip4/172.25.0.5/tcp/9096/p2p/12D3KooWBTQpm9HkKJoZ3DBkyN61ZNnhE1EnB2qbDBVY15LX9qPY
+Restart=always
+User=ubuntu
+Group=ubuntu
+
+[Install]
+WantedBy=multi-user.target
